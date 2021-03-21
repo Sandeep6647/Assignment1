@@ -1,0 +1,34 @@
+use Sandeep
+create table Trainer
+(
+	Tranier_Name varchar(20) not null,
+	Trainer_Id int not null,
+	Trainer_Age int not null,
+	Trainer_City varchar(30) not null,
+	Trainer_Salary int not null
+);
+Trainer_Name 	Trainer_Id		Trainer_Age	Trainer_City	Trainer_Salary
+Sandeep		6019		     22		Nizamabad	     10000
+Surya		6010		     23		Hyderabad	     20000
+Vaasu		6030		     24		Hydearabad	     30000
+Deekshika		6022		     20		Mumbai		     40000
+Mounika		6040		     21	      	Chennai		     50000
+
+select * from Trainer where Trainer_Name='Sandeep' or Trainer_Salray=20000;
+select * from Trainer where Trainer_Name='Surya'orTrainer_Age=23;
+select * from Trainer where Trainer_Name='Vaasu' or Trainer_City='Nizamabad';
+select * from Trainer where Trainer_Name='Deekshika' or Trainer_Id=20;
+select * from Trainer where Trainer_Name='Mounika' or Trainer_Salray=70000;
+select * from Trainer where Trainer_Name='Sandeep' or Trainer_Id=6019;
+select * from Trainer where Trainer_Name='Surya' or Trainer_City='Hyderabad';
+select * from Trainer where Trainer_Name='Surya' or Trainer_City='Nizamabad';
+	
+OUTPUT:
+	
+
+Trainer_Name 	Trainer_Id		Trainer_Age	Trainer_City	Trainer_Salary
+Sandeep		6019		     22		Nizamabad	     10000
+Surya		6010		     23		Hyderabad	     20000
+Vaasu		6030		     24		Hydearabad	     30000
+Deekshika		6022		     20		Mumbai		     40000
+Mounika		6040		     21	      	Chennai		     50000

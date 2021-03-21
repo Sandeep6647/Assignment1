@@ -1,0 +1,24 @@
+use Sandeep
+
+	create table Teacher
+	(
+		Teacher_Name varchar(20) not null,
+		Teacher_Id int not null,
+		Teacher_Age int not null,
+		Teacher_Subject varchar(20) not null,
+		Teacher_City varchar(20) not null,
+		Teacher_Salary int not null,
+	);
+	
+
+Teacher_Name	Teacher_Id	Teacher_Age	Teacher_Subject	Teacher_City 	Teacher_Salary
+Sachin		123		22		DBMS		Hyderabad	50000
+Poornima		456		22		RDBMS		Bangulore		60000
+Dev_Anand	789		23		SQL		Chennai		65000
+Vinay		111		24		Data structure	Karnataka		70000
+
+select * Teacher where Teacher_Name='Sachin' and (City='Hyderabd' or Subject='SQL');
+select * Teacher where Teacher_Name='poornima' and (City='Hyderabd' or Subject='RDBMS');
+select * Teacher where Teacher_Name='Sachin' and (Subject='RDBMS' or Salary=50000);
+select * Teacher where Teacher_Name='Vinay' and (City='Hyderabd' or Age=24);
+select * Teacher where Teacher_Name='Dev_Anand' and (Id=789 or Suject='SQL);

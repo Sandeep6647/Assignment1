@@ -1,0 +1,20 @@
+use Sandeep
+create table Bank
+(
+	Bank_Name varchar(20) not null,
+	Bank_Id int not null,
+	Bank_Loan_No int not null,
+	Bank_Amt int not null
+);
+  Bank_Name	Bank_Id	Bank_Loan_No	Bank_Amt
+   SBI		123	1000		10000
+   Andhra		345	2000		20000
+   HDFC		567	3000		30000
+   Axis		789	4000		40000
+   ICIC		986	5000		50000
+select * from Bank where Bank_Name=SBI and Bank Amt=1000;
+select * from Bank where Bank_Name=Andhra and Bank Amt=2000;
+select * from Bank where Bank_Name=HDFC and Bank Amt=3000;
+select * from Bank where Bank_Name=Axis and Bank Amt=4000;
+select * from Bank where Bank_Name=ICIC and Bank Amt=5000;
+
